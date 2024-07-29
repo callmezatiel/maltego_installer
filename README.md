@@ -8,7 +8,7 @@ Prerequisites
 
 Dependencies
 
-* Java  Stable Pre-Installed preferably (Optional)
+* Java  Stable Pre-Installed Preferably (Optional)
 
 # Installation
 ```
@@ -20,7 +20,8 @@ Dependencies
 
 ```
 
-![socallmemaybe](https://i.postimg.cc/zXhYdMxc/amltego-installer.png)
+[![amltego-installer.png](https://i.postimg.cc/zXhYdMxc/amltego-installer.png)](https://postimg.cc/rKqHshX1)
+
 
 
 
