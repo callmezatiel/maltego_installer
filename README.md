@@ -17,3 +17,13 @@ Dependencies
 - cd maltego_installer
 - chmod +x maltego_installer.sh
 - sudo ./maltego_installer.sh
+
+```
+
+![socallmemaybe](https://i.postimg.cc/zXhYdMxc/amltego-installer.png)
+
+
+
+# Issues will be fixed asap. Pull Request Welcomed
+
+https://github.com/callmezatiel/voidkde/issues
