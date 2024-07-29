@@ -8,7 +8,7 @@ Prerequisites
 
 Dependencies
 
-* Java
+* Java  Stable Pre-Installed preferably (Optional)
 
 # Installation
 ```
