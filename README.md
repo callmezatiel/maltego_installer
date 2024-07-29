@@ -20,9 +20,7 @@ Dependencies
 
 ```
 
-[![amltego-installer.png](https://i.postimg.cc/zXhYdMxc/amltego-installer.png)](https://postimg.cc/rKqHshX1)
-
-
+![githab.png](https://i.postimg.cc/SNWkQswr/githab.png)
 
 
 # Issues will be fixed asap. Pull Request Welcomed
