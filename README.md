@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
- <a href="https://github.com/callmezatiel"><img src="https://i.postimg.cc/5tcxfztn/maltego.png" width=1044 height=374 
+ <a href="https://github.com/callmezatiel"><img src="https://i.postimg.cc/5tcxfztn/maltego.png" width=522 height=187
   <br>
 </h1>
 
