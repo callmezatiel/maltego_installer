@@ -30,7 +30,6 @@ else
 fi
 # Check if apt exists
 if [ -f "/usr/bin/apt" ]; then
-    sudo apt install wget -y
     if [ -f "/usr/bin/wget" ]; then
         wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
         echo "Done!"
