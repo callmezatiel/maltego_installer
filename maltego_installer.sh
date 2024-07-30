@@ -43,5 +43,7 @@ if [ -f "/usr/bin/apt" ]; then
         sudo chmod +x /usr/bin/metagoofil
         echo -e "Matego instalado"
     fi
+else
+    echo "APT Not found! Are you running Debian/Ubuntu distro?"
 fi
 
