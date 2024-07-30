@@ -30,6 +30,6 @@ Dependencies
 ![githab.png](https://i.postimg.cc/SNWkQswr/githab.png)
 
 
-# Issues will be fixed asap. Pull Request Welcomed
+## Issues will be fixed asap. Pull Request Welcomed
 
-https://github.com/callmezatiel/voidkde/issues
+https://github.com/callmezatiel/maltego_installer/issues
