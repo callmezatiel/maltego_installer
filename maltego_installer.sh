@@ -43,7 +43,6 @@ if [ -f "/usr/bin/apt" ]; then
         sudo chmod +x /usr/bin/metagoofil
         echo -e "Matego instalado"
     fi
-fi
 # THIS IT'S OPTIONAL THIS IT'S IF NALA IT'S INSTALLED AND USES NALA INSTAED OF APT (IF NOT USES APT BY DEFAULT)
 elif [ -f "/usr/bin/nala" ]; then
     sudo nala install wget -y
