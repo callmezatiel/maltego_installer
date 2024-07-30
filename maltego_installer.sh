@@ -43,25 +43,5 @@ if [ -f "/usr/bin/apt" ]; then
         sudo chmod +x /usr/bin/metagoofil
         echo -e "Matego instalado"
     fi
-# THIS IT'S OPTIONAL THIS IT'S IF NALA IT'S INSTALLED AND USES NALA INSTAED OF APT (IF NOT USES APT BY DEFAULT)
-elif [[ -f "/usr/bin/nala" ]]; then
-    sudo nala install wget -y
-    if [ -f "/usr/bin/wget" ]; then
-        wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
-        echo "Done!"
-        echo "Installing Maltego..."
-        sudo nala install ./Maltego.v4.4.1.deb default-jre maltego -y
-        echo "Cleaning temporally used dirs!"
-        rm -rv "$HOME/matego"
-        echo "Assign permissions to metego binaries"
-            
-        sudo chmod +x /usr/bin/metagoofil
-        echo -e "Matego instalado"
-    fi
-    else
-        echo "No packages managers founded (nala/apt) are you using Debian/Ubuntu?"
-    fi
 fi
-
- 
 
