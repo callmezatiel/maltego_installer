@@ -16,6 +16,7 @@ Prerequisites
 Dependencies
 
 * Java  Stable Pre-Installed Preferably (Optional)
+* Nala (Optional)
 
 # Installation
 ```
