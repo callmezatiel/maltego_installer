@@ -22,37 +22,47 @@ else
     echo "Folder already exists!"
 fi
 echo "Downloading Matego...."
+# Check if wget has installed!
 if [ ! -f "/usr/bin/wget" ]; then
-    if [ -f "/usr/bin/apt" ]; then
-        sudo apt install wget -y
-        if [ -f "/usr/bin/wget" ]; then
-            wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
-            echo "Done!"
-            echo "Installing Matego..."
-            sudo apt install ./Maltego.v4.4.1.deb default-jre maltego -y
-            echo "Cleaning temporally used dirs!"
-            rm -rv "$HOME/maltego"
-            echo "Assign permissions to metago binaries"
+    sudo apt install wget -y
+else
+    echo "Wget installed!"
+fi
+# Check if apt exists
+if [ -f "/usr/bin/apt" ]; then
+    sudo apt install wget -y
+    if [ -f "/usr/bin/wget" ]; then
+        wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
+        echo "Done!"
+        echo "Installing Matego..."
+        sudo apt install ./Maltego.v4.4.1.deb default-jre maltego -y
+        echo "Cleaning temporally used dirs!"
+        rm -rv "$HOME/maltego"
+        echo "Assign permissions to metago binaries"
             
-            sudo chmod +x /usr/bin/metagoofil
-            echo -e "Matego instalado"
-        fi
+        sudo chmod +x /usr/bin/metagoofil
+        echo -e "Matego instalado"
     fi
-    elif [ -f "/usr/bin/nala" ]; then
-        sudo nala install wget -y
-        if [ -f "/usr/bin/wget" ]; then
-            wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
-            echo "Done!"
-            echo "Installing Maltego..."
-            sudo nala install ./Maltego.v4.4.1.deb default-jre maltego -y
-            echo "Cleaning temporally used dirs!"
-            rm -rv "$HOME/matego"
-            echo "Assign permissions to metego binaries"
+fi
+# THIS IT'S OPTIONAL THIS IT'S IF NALA IT'S INSTALLED AND USES NALA INSTAED OF APT (IF NOT USES APT BY DEFAULT)
+elif [ -f "/usr/bin/nala" ]; then
+    sudo nala install wget -y
+    if [ -f "/usr/bin/wget" ]; then
+        wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
+        echo "Done!"
+        echo "Installing Maltego..."
+        sudo nala install ./Maltego.v4.4.1.deb default-jre maltego -y
+        echo "Cleaning temporally used dirs!"
+        rm -rv "$HOME/matego"
+        echo "Assign permissions to metego binaries"
             
-            sudo chmod +x /usr/bin/metagoofil
-            echo -e "Matego instalado"
-        fi
+        sudo chmod +x /usr/bin/metagoofil
+        echo -e "Matego instalado"
     fi
+    else
+        echo "No packages managers founded (nala/apt) are you using Debian/Ubuntu?"
+    fi
+fi
 
  
 
