@@ -44,7 +44,7 @@ if [ -f "/usr/bin/apt" ]; then
         echo -e "Matego instalado"
     fi
 # THIS IT'S OPTIONAL THIS IT'S IF NALA IT'S INSTALLED AND USES NALA INSTAED OF APT (IF NOT USES APT BY DEFAULT)
-elif [ -f "/usr/bin/nala" ]; then
+elif [[ -f "/usr/bin/nala" ]]; then
     sudo nala install wget -y
     if [ -f "/usr/bin/wget" ]; then
         wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
