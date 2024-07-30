@@ -37,6 +37,7 @@ if [ ! -f "/usr/bin/wget" ]; then
             sudo chmod +x /usr/bin/metagoofil
             echo -e "Matego instalado"
         fi
+    fi
     elif [ -f "/usr/bin/nala" ]; then
         sudo nala install wget -y
         if [ -f "/usr/bin/wget" ]; then
