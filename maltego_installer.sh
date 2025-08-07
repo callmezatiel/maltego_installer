@@ -31,10 +31,10 @@ fi
 if [ -f "/usr/bin/apt" ]; then
     sudo apt install wget -y
     if [ -f "/usr/bin/wget" ]; then
-        wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.4.1.deb
+        wget -c https://downloads.maltego.com/maltego-v4/linux/Maltego.v4.10.0.deb
         echo "Done!"
         echo "Installing Matego..."
-        sudo apt install ./Maltego.v4.4.1.deb default-jre maltego -y
+        sudo apt install ./Maltego.v4.10.0.deb default-jre maltego -y
         echo "Cleaning temporally used dirs!"
         rm -rv "$HOME/maltego"
         echo "Assign permissions to metago binaries"
