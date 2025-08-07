@@ -13,6 +13,18 @@ Maltego empowers investigators to speed up and increase the precision of their i
 Prerequisites
 * Ubuntu / Debian Linux System
 
+# Hardware requirements
+* You will need a 64-bit version of Java 8, 11 or 17 run-time installed on your machine in order to use Maltego Graph.
+* A minimum of 4GB of RAM is required. 16GB is recommended.
+* The processing power of any modern, multi-core processor is sufficient.
+* 4GB of disk space.
+* A mouse is recommended for navigating graphs
+
+# Network requirements
+* Maltego Graph requires Internet access to operate fully.
+* For a detailed list, check our Network Requirements
+
+
 Dependencies
 
 * Java  Stable Pre-Installed Preferably (Optional)
